@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_reg_top"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:elevation="4dp"
+            android:src="@drawable/budicologo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/logo_title"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/logo"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_head"
+            android:textColor="#295272"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/logo_title"
+            android:gravity="center_horizontal"
+            android:text="Building Better Tomorrow "
+            android:fontFamily="serif-monospace"
+            android:textColor="#6B43C7"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_reg_top"
+        android:id="@+id/ll_reg_title"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_reg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Sign in"
+            android:textColor="#295272"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_reg_title"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_User_Name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/user"
+                            android:singleLine="true"
+                            android:textAllCaps="false"
+                            android:imeOptions="actionNext"
+                            android:hint="@string/userid"
+                            android:inputType="textCapCharacters" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:drawableEnd="@drawable/key"
+                            android:hint="@string/pass"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg_log"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="PEOPLE"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JEE"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AEE"/>
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bluegradientbuttonshape"
+                        android:layout_marginTop="10dp"
+                        android:text=" Login ( लॉगिन करें )"
+                        android:onClick="Login"
+                        android:drawableEnd="@drawable/btnarrow"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewEnd"
+                            android:text="Dont't have an account?"
+                            android:textSize="11sp"
+                            android:textColor="#6B43C7">
+                        </TextView>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_register"
+                            android:text=" Sign Up"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="#6B43C7">
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewEnd"
+                            android:text="Forget Password ?"
+                            android:textSize="11sp"
+                            android:textColor="#6B43C7">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/tv_fort_pass"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:text=" Click Here"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="#F44336">
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtVersion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="App Version : "
+                            android:visibility="visible"
+                            android:textColor="#999"
+                            android:textSize="15sp"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

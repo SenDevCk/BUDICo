@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReportCountwiseActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_report"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <!-- <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+   <LinearLayout
+       android:id="@+id/ll_tag"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/app_bar_report"
+       >
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight=".2"
+           android:gravity="left"
+           android:paddingLeft="10dp"
+           android:text="Type"/>
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight=".2"
+           android:gravity="center"
+           android:textColor="@android:color/black"
+           android:text="Total"/>
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight=".2"
+           android:gravity="center"
+           android:textColor="@android:color/holo_green_dark"
+           android:text="Solved"/>
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight=".2"
+           android:gravity="center"
+           android:textColor="@android:color/holo_red_dark"
+           android:text="Rejected"/>
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight=".2"
+           android:gravity="center"
+           android:textColor="@android:color/holo_orange_dark"
+           android:text="Pending"/>
+   </LinearLayout>
+    <ListView
+        android:id="@+id/list_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@+id/ll_tag"
+        android:scrollbars=""
+        />
+
+    <TextView
+        android:id="@+id/text_report_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Report Not Found !"/>
+</RelativeLayout>

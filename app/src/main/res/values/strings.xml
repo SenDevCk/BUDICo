@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BUIDCo PGRS</string>
+    <string name="app_head">BUIDCo</string>
+    <string name="userid"> UserId ( यूजर आईडी )</string>
+    <string name="pass"> Password ( पासवर्ड )</string>
+    <string name="ben_name">Name ( नाम )</string>
+    <string name="his">Grievance ( शिकायत )</string>
+    <string name="add">Residential Address ( आवेदक का आवासीय पता विवरण )</string>
+    <string name="mobno">Mobile Number ( मोबाइल नंबर ) </string>
+    <string name="panchyat">Panchayat ( पंचायत )</string>
+    <string name="dob">Assign work date ( कार्य की तारीख बताएं )</string>
+    <string name="ben_photo">Take Photo( Document )</string>
+    <string name="ben_photo1">Take Photo( Location )</string>
+    <string name="otp">OTP</string>
+    <string name="email">Email ID (ईमेल)</string>
+    <string name="landmark">Landmark (सीमा चिन्ह)</string>
+    <string name="logout">Log Out</string>
+    <string name="remarks">Remarks</string>
+    <string name="google_maps_key">AIzaSyCSgPMY3ejJodcO1GnU-GnWQLC82YfRMFY</string>
+    <string name="circle">Area ( क्षेत्र ) *</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/m1"
+        android:title="Menu">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_aj_ag"
+                    android:title="Approved Grievances" />
+                <item
+                    android:id="@+id/drawer_aj_rg"
+                    android:title="Resolve Grievances" />
+                <item
+                    android:id="@+id/drawer_aj_reg"
+                    android:title="Rejected Grievances" />
+                <item
+                    android:id="@+id/drawer_aj_cwr"
+                    android:visible="true"
+                    android:title="Count Wise Report" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/m3"
+        android:title="Menu">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_ee_ag_ae"
+                    android:title="Forwarded to AE" />
+                <item
+                    android:id="@+id/drawer_ee_ag_je"
+                    android:title="Forwarded to JE" />
+                <item
+                    android:id="@+id/drawer_ee_ag_se"
+                    android:title="Forwarded to SE" />
+                <item
+                    android:id="@+id/drawer_ee_cwr"
+                    android:visible="true"
+                    android:title="Rejected" />
+                <item
+                    android:id="@+id/drawer_ee_rs"
+                    android:title="Resolved" />
+                <item
+                    android:id="@+id/drawer_ee_reg"
+                    android:visible="true"
+                    android:title="Count Wise Report" />
+
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/m2"
+        android:title="Menu">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_up_new_gri"
+                    android:title="Upload New Grievance" />
+
+                <item
+                    android:id="@+id/drawer_menu_up_swap"
+                    android:title="Grievance Register" />
+                <item
+                    android:id="@+id/dra_off_gri"
+                    android:title="Offline Grievance List"/>
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/drawer_change_pass"
+        android:visible="true"
+        android:title="Change Password" />
+</menu>

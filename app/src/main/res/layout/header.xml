@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/colorPrimaryDark">
+
+
+    <!--<ImageView
+        android:id="@+id/sample_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/digital"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_welcome"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Bihar Urban Infrastructure Development Corporation Ltd."
+            android:gravity="left"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_welcome"
+        android:layout_marginLeft="55dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="बिहार शहरी आधारभूत संरचना विकास निगम लिमिटेड"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/budico"/>
+
+</RelativeLayout>

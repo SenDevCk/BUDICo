@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_st_head"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="name"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="0000000"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/text_solve"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="Rs. 0.00"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/text_reject"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="Rs. 0.00"
+            android:textColor="@android:color/holo_red_dark" />
+        <TextView
+            android:id="@+id/text_pending"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="Rs. 0.00"
+            android:textColor="@android:color/holo_orange_dark" />
+    </LinearLayout>
+</LinearLayout>

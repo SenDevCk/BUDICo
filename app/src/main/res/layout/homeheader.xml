@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark">
+
+
+    <!--<ImageView
+        android:id="@+id/sample_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/digital"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_welcome"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="BUIDco ( PGRS )"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_welcome"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:text="Welcome :"
+            android:gravity="right"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1.1"
+           android:layout_height="wrap_content"
+           android:text="RoleDescription"
+           android:gravity="start"
+           android:id="@+id/txt_UserName"
+           android:textSize="14sp"
+           android:layout_marginLeft="2dp"
+           android:layout_centerInParent="true"
+           android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/budico"/>
+
+</RelativeLayout>
